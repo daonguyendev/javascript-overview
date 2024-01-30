@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM 02</title>
+</head>
+<body>
+    <ul id="menu">
+        <li class="menu-item">Trang chủ</li>
+        <li class="menu-item">Giới thiệu</li>
+        <li class="menu-item">Quần áo</li>
+        <li class="menu-item">Giày dép</li>
+        <li class="menu-item">Liên hệ</li>
+    </ul>
+
+    <script>
+        let menuItems = document.querySelectorAll(".menu-item");
+        console.log(menuItems);
+        menuItems[0].innerText = "Homepage";
+    </script>
+</body>
+</html>

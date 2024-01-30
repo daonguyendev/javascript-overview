@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class, Object</title>
+</head>
+<body>
+    <script>
+        class Car {
+            constructor (id, model, capacity, color) {
+                this.id = id;
+                this.model = model;
+                this.capacity = capacity;
+                this.color = color;
+            }
+
+            run = (model) => {
+                console.log(`Car ${model} is running...`);
+            }
+        }
+
+        let car1 = new Car(1, "Merc", 4, "Green");
+        let car2 = new Car(2, "BMW", 8, "Blue");
+        let car3 = new Car(3, "Audi", 4, "Orange");
+        let carArray = new Array();
+        carArray.push(car1);
+        carArray.push(car2);
+        carArray.push(car3);
+
+        console.log(carArray);
+        console.log(car1.run(car1.model));
+    </script>
+</body>
+</html>

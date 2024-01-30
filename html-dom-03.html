@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML DOM 03</title>
+  </head>
+  <body>
+    <img
+      id="bgImg"
+      src="https://i.pinimg.com/736x/a2/ee/a0/a2eea0b79b4c2651b3c1278522ba4722.jpg"
+      alt=""
+    /><br />
+    <button onclick="changeBgImg()">Change Background Image</button>
+
+    <script>
+      function changeBgImg() {
+        let bgImg = document.getElementById("bgImg");
+        console.log(bgImg);
+        bgImg.src =
+          "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg";
+      }
+    </script>
+  </body>
+</html>

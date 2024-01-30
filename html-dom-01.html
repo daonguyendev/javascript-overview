@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML DOM, JS DOM</title>
+  </head>
+  <body>
+    <script>
+      //Thao tác ké giao diện trên trang Google
+      //nhớ đặt id cho nút bấm Google Search
+      let searchBtn = document.getElementById("searchBtn");
+      console.log(searchBtn);
+      searchBtn.value = "Tìm kiếm với Google";
+
+      //Thao tác ké giao diện trên trang Google
+      //nhớ đặt id cho nút bấm I'm Feeling Lucky
+      let luckyBtn = document.querySelector(".lucky-btn");
+      console.log(luckyBtn);
+      luckyBtn.value = "Tôi cảm thấy thích thú khi học lập trình";
+    </script>
+  </body>
+</html>
